@@ -1,6 +1,5 @@
-KernelFunction := proc(X1,X2,logtheta,n,N1,N2)
+KernelFunction := proc(X1,X2,logtheta,n,N1,N2,K)
    local theta::Vector,
-         K::Matrix,
          V::Vector,
          i,
          j,

@@ -1,10 +1,8 @@
-CovarianceMatrix := proc(X,logtheta,n,N,CovMat)
-   local theta, i;
-
-   theta := exp(logtheta[n+2]);
-
-   KernelFunction(X,X,logtheta,n,N,N,CovMat);
-   for i to N do
-      CovMat[i,i]:=CovMat[i,i]+theta^2;
+DotProduct := proc(X1,X2,n)
+   local i, dp;
+   dp := 0;
+   for i to n do
+   	dp := dp + X1[i]*X2[i];
    end do;
+   return dp;
 end proc:
