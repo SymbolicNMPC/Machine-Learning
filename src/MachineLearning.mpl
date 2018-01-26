@@ -15,8 +15,12 @@ MachineLearning := module()
 description "Machine learning ";
 option package;
 
-export Simulate;
+export CovarianceMatrix,
+       KernelFunction,
+       Simulate;
 
 $include "Simulation/Simulate.mm"
+$include "GuassianProcess/KernelFunction.mm"
+$include "GuassianProcess/CovarianceMatrix.mm"
 
 end module; # MachineLearning
