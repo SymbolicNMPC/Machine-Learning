@@ -14,7 +14,7 @@ KernelFunction := proc(X1,X2,logtheta,n,N1,N2,K)
    		for k to n do
    		   V[k] := (X1[k,i]-X2[k,j])/theta[k];
    		end do;
-   		K[i,j]:=theta[n+1]*exp(-DotProduct(V,V,n)/2);
+   		K[i,j]:=theta[n+1]^2*exp(-DotProduct(V,V,n)/2);
    	end do;
    end do;
    return K;
