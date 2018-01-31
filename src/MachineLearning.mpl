@@ -15,12 +15,14 @@ MachineLearning := module()
 description "Machine learning";
 option package;
 
-export CovarianceMatrix,
+export CostFunction,
+       CovarianceMatrix,
        DotProduct,
        KernelFunction,
        Mean,
        Mean1D,
        Norm2,
+       PDMatrixInverse,
        StandardDeviation,
        StandardDeviation1D,
        Simulate,
@@ -30,8 +32,10 @@ export CovarianceMatrix,
 $include "Simulation/Simulate.mm"
 $include "LinearAlgebra/DotProduct.mm"
 $include "LinearAlgebra/Norm2.mm"
+$include "LinearAlgebra/PDMatrixInverse.mm"
 $include "LinearAlgebra/SolveLT.mm"
 $include "LinearAlgebra/SolveUT.mm"
+$include "GaussianProcess/CostFunction.mm"
 $include "GaussianProcess/CovarianceMatrix.mm"
 $include "GaussianProcess/KernelFunction.mm"
 $include "GaussianProcess/Mean.mm"
