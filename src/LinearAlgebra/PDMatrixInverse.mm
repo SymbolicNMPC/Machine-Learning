@@ -18,6 +18,6 @@ PDMatrixInverse := proc(A::Matrix,
         B[..,i] := ei;
     end do;
     
-    return mul(L[i,i],i=1..n);
+    return mul(L[i,i],i=1..n)^2;
 
 end proc;

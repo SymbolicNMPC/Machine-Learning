@@ -25,6 +25,7 @@ export CostFunction,
        PDMatrixInverse,
        StandardDeviation,
        StandardDeviation1D,
+       SquaredDistance,
        Simulate,
        SolveLT,
        SolveUT;
@@ -39,6 +40,7 @@ $include "GaussianProcess/CostFunction.mm"
 $include "GaussianProcess/CovarianceMatrix.mm"
 $include "GaussianProcess/KernelFunction.mm"
 $include "GaussianProcess/Mean.mm"
+$include "GaussianProcess/SquaredDistance.mm"
 $include "GaussianProcess/StandardDeviation.mm"
 
 end module; # MachineLearning
